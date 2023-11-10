@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>c6ae702e8c9f45748e3080dc8878234f</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="midterm-project" class="cell markdown" id="-Bvz_Qj0H8vb">
+<h2><strong>Midterm Project</strong></h2>
+<h3 id="group-members">Group Members:</h3>
+<ol>
+<li>Baron, Veronica Frances S.</li>
+<li>Caiña, Allivia Jaazielle P.</li>
+<li>Dusaran, Justine Marie R.</li>
+<li>Riego de Dios, Poncholo T.</li>
+</ol>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:369}"
+id="AQ3_zX67H8vf" data-outputId="83afadce-8f95-403b-e169-51ce9a31dd2d">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Library and DataFrame Setup</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime <span class="im">as</span> dt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> gdown</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statistics</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> calendar</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>file_id <span class="op">=</span> <span class="st">&#39;1PjOECof_ZgspgV3duuzh1MN_5PVjPLF4&#39;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="ss">f&#39;https://drive.google.com/uc?id=</span><span class="sc">{</span>file_id<span class="sc">}</span><span class="ss">&#39;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>output_file <span class="op">=</span> <span class="st">&#39;FINAL_DATA_DSP_PROJ.csv&#39;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>gdown.download(url, output_file, quiet<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(output_file) <span class="co"># Read the CSV file into a DataFrame</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>df.head() <span class="co"># Returns first 5 rows by default</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>df.describe() <span class="co"># Statistical summary of the DataFrame</span></span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>Downloading...
+From: https://drive.google.com/uc?id=1PjOECof_ZgspgV3duuzh1MN_5PVjPLF4
+To: /content/FINAL_DATA_DSP_PROJ.csv
+100%|██████████| 34.2k/34.2k [00:00&lt;00:00, 31.2MB/s]
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="52">
+
+  <div id="df-4182cb5b-f1d0-4334-9e37-a3b4b19a6536" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Temperature</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>1347.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>28.554863</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.879355</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>25.600000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>28.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>28.500000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>29.100000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>30.900000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-4182cb5b-f1d0-4334-9e37-a3b4b19a6536')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-4182cb5b-f1d0-4334-9e37-a3b4b19a6536 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-4182cb5b-f1d0-4334-9e37-a3b4b19a6536');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-a9d766f1-70d2-429c-a2c0-d93c058cb593">
+  <button class="colab-df-quickchart" onclick="quickchart('df-a9d766f1-70d2-429c-a2c0-d93c058cb593')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-a9d766f1-70d2-429c-a2c0-d93c058cb593 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" id="WXqiJA0kGB1i">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to generate and display a histogram for a specific column in the DataFrame</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> generate_histogram(df_file, data_name, x_label, title):</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calculate mean, standard deviation, skewness, and kurtosis for the data</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    m <span class="op">=</span> statistics.mean(df_file[data_name])</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    sd <span class="op">=</span> statistics.stdev(df_file[data_name])</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    skew <span class="op">=</span> df_file[data_name].skew()</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    kurt <span class="op">=</span> df_file[data_name].kurtosis()</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Determine the number of bins for the histogram using the square root rule</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    bins_val <span class="op">=</span> <span class="bu">round</span>(np.sqrt(<span class="bu">len</span>(df[data_name])))</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Plot the histogram with KDE and display mean, skewness, and kurtosis</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    sns.histplot(data<span class="op">=</span>df_file, x<span class="op">=</span>data_name, bins<span class="op">=</span>bins_val, kde<span class="op">=</span><span class="va">True</span>, color<span class="op">=</span><span class="st">&#39;royalblue&#39;</span>)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    sns.<span class="bu">set</span>(rc<span class="op">=</span>{<span class="st">&#39;figure.dpi&#39;</span>: <span class="dv">400</span>})</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    plt.axvline(m, color<span class="op">=</span><span class="st">&#39;k&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;dashed&#39;</span>)</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    plt.axvline(m <span class="op">+</span> sd, color<span class="op">=</span><span class="st">&#39;y&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;dashed&#39;</span>)</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    plt.axvline(m <span class="op">-</span> sd, color<span class="op">=</span><span class="st">&#39;y&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;dashed&#39;</span>)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    plt.axvline(m <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> sd, color<span class="op">=</span><span class="st">&#39;y&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;dashed&#39;</span>)</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    plt.axvline(m <span class="op">-</span> <span class="dv">2</span> <span class="op">*</span> sd, color<span class="op">=</span><span class="st">&#39;y&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;dashed&#39;</span>)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    plt.text(<span class="fl">0.97</span>, <span class="fl">0.97</span>, <span class="ss">f&#39;Skewness: </span><span class="sc">{</span>skew<span class="sc">:.2f}</span><span class="ss">&#39;</span>, verticalalignment<span class="op">=</span><span class="st">&#39;top&#39;</span>, horizontalalignment<span class="op">=</span><span class="st">&#39;right&#39;</span>, transform<span class="op">=</span>plt.gca().transAxes)</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    plt.text(<span class="fl">0.97</span>, <span class="fl">0.91</span>, <span class="ss">f&#39;Kurtosis: </span><span class="sc">{</span>kurt<span class="sc">:.2f}</span><span class="ss">&#39;</span>, verticalalignment<span class="op">=</span><span class="st">&#39;top&#39;</span>, horizontalalignment<span class="op">=</span><span class="st">&#39;right&#39;</span>, transform<span class="op">=</span>plt.gca().transAxes)</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(x_label)</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    plt.ylabel(<span class="st">&#39;Frequency&#39;</span>)</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    plt.title(title)</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to generate and display a line graph for temperature data against a temporal division</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> generate_line_graph(df_file, x_values, x_label, title):</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    sns.set_style(<span class="st">&#39;whitegrid&#39;</span>)</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>    plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Plot a line graph with specified temporal division and temperature data</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    sns.lineplot(data<span class="op">=</span>df_file, x<span class="op">=</span>x_values, y<span class="op">=</span><span class="st">&#39;Temperature&#39;</span>, marker<span class="op">=</span><span class="st">&#39;o&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;-&#39;</span>, markersize<span class="op">=</span><span class="dv">5</span>, color<span class="op">=</span><span class="st">&#39;r&#39;</span>)</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>    plt.title(title)</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(x_label)</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>    plt.ylabel(<span class="st">&#39;Temperature (°C)&#39;</span>)</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to generate and display a waveform from given data in the DataFrame</span></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> generate_waveform(df, title, sampling_rate<span class="op">=</span><span class="dv">1</span><span class="op">/</span><span class="dv">15</span>, count<span class="op">=</span><span class="va">None</span>, amplitude_column<span class="op">=</span><span class="st">&#39;Temperature&#39;</span>):</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> count <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>        df <span class="op">=</span> df.head(count)</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>    duration <span class="op">=</span> <span class="bu">len</span>(df) <span class="op">*</span> sampling_rate  <span class="co"># Duration in minutes</span></span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Generate time array based on sampling rate and count</span></span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>    t <span class="op">=</span> np.linspace(<span class="dv">0</span>, duration, <span class="bu">len</span>(df), endpoint<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract amplitude values from the specified column</span></span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>    amplitude <span class="op">=</span> df[amplitude_column].values</span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Plot the generated waveform</span></span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">4</span>))</span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a>    plt.plot(t, amplitude)</span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a>    plt.title(title)</span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(<span class="st">&#39;Time (minutes)&#39;</span>)</span>
+<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a>    plt.ylabel(<span class="st">&#39;Amplitude&#39;</span>)</span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a>    plt.grid(<span class="va">True</span>)</span>
+<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to calculate and return the variance of a specific column in the DataFrame</span></span>
+<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_variance(dataframe, column_name<span class="op">=</span><span class="st">&#39;Temperature&#39;</span>):</span>
+<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a>    variance <span class="op">=</span> np.var(dataframe[column_name])</span>
+<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> variance</span></code></pre></div>
+</div>
+<div class="cell markdown" id="iANgRmfMHxjE">
+<p><strong>Time of Day</strong></p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="x2sDzVgr5Pwg" data-outputId="21997a1b-c435-4c28-93f0-b3e949204b07">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the &#39;Time&#39; column to a datetime object if it&#39;s not already in datetime format</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Time&#39;</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">&#39;Time&#39;</span>], <span class="bu">format</span><span class="op">=</span><span class="st">&#39;%H:%M:%S&#39;</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a DateTime column</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;DateTime&#39;</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">&#39;Date&#39;</span>].astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">&#39; &#39;</span> <span class="op">+</span> df[<span class="st">&#39;Time&#39;</span>].astype(<span class="bu">str</span>))</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the DataFrame to include only rows within &#39;Early Morning&#39; time (12 AM to 5:59 AM)</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>early_morning_data <span class="op">=</span> df[(df[<span class="st">&#39;Time&#39;</span>].dt.hour <span class="op">&gt;=</span> <span class="dv">0</span>) <span class="op">&amp;</span> (df[<span class="st">&#39;Time&#39;</span>].dt.hour <span class="op">&lt;</span> <span class="dv">6</span>)]</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Select only &#39;Time&#39; and &#39;Temperature&#39; columns and format &#39;Time&#39; as string</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>early_morning_df <span class="op">=</span> early_morning_data[[<span class="st">&#39;Time&#39;</span>, <span class="st">&#39;Temperature&#39;</span>]].copy()</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>early_morning_df[<span class="st">&#39;Time&#39;</span>] <span class="op">=</span> early_morning_df[<span class="st">&#39;Time&#39;</span>].dt.time</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(early_morning_df)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the summary statistics for the numeric columns</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>statsum_early_morning <span class="op">=</span> early_morning_df.drop(columns<span class="op">=</span>[<span class="st">&#39;Time&#39;</span>]).describe()</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(statsum_early_morning)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>variance_early_morning <span class="op">=</span> calculate_variance(early_morning_df)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Variance (Early Morning):&#39;</span>, variance_early_morning, <span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Histogram</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>generate_histogram(early_morning_df, <span class="st">&#39;Temperature&#39;</span>, <span class="st">&#39;Temperature °C&#39;</span>, <span class="st">&#39;Early Morning Temperature Histogram (12 AM to 5:59 AM)&#39;</span>)</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Waveform</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>generate_waveform(early_morning_df, <span class="st">&#39;Early Morning Temperature Waveform (12 AM to 5:59 AM)&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>          Time  Temperature
+24    00:04:24         29.2
+25    00:18:27         29.0
+26    00:32:29         29.4
+27    00:46:33         29.5
+28    01:00:35         29.5
+...        ...          ...
+1311  04:58:44         28.0
+1312  05:12:48         27.9
+1313  05:26:52         27.6
+1314  05:40:56         27.5
+1315  05:55:00         27.5
+
+[327 rows x 2 columns]
+       Temperature
+count   327.000000
+mean     28.365749
+std       0.787199
+min      25.700000
+25%      27.850000
+50%      28.500000
+75%      28.900000
+max      30.000000
+
+Variance (Early Morning): 0.6177871297777028 
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/8b7543446eb792c4e7d50667840511b1e6e199f2.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/558b9e94cd692ef2f40ca8a75a1d2e30bf4e2bd0.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="cLtVZRl-H2EO" data-outputId="28ae7817-1b40-4786-861d-7f5f7c95c59d">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the &#39;Time&#39; column to a datetime object if it&#39;s not already in datetime format</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Time&#39;</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">&#39;Time&#39;</span>], <span class="bu">format</span><span class="op">=</span><span class="st">&#39;%H:%M:%S&#39;</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the DataFrame to include only rows within &#39;Morning&#39; time (6 AM to 11:59 AM)</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>morning_data <span class="op">=</span> df[(df[<span class="st">&#39;Time&#39;</span>].dt.hour <span class="op">&gt;=</span> <span class="dv">6</span>) <span class="op">&amp;</span> (df[<span class="st">&#39;Time&#39;</span>].dt.hour <span class="op">&lt;</span> <span class="dv">12</span>)]</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Select only &#39;Time&#39; and &#39;Temperature&#39; columns and format &#39;Time&#39; as string</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>morning_df <span class="op">=</span> morning_data[[<span class="st">&#39;Time&#39;</span>, <span class="st">&#39;Temperature&#39;</span>]].copy()</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>morning_df[<span class="st">&#39;Time&#39;</span>] <span class="op">=</span> morning_df[<span class="st">&#39;Time&#39;</span>].dt.time</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(morning_df)</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the summary statistics for the numeric columns</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>statsum_morning <span class="op">=</span> morning_df.drop(columns<span class="op">=</span>[<span class="st">&#39;Time&#39;</span>]).describe()</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(statsum_morning)</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>variance_morning <span class="op">=</span> calculate_variance(morning_df)</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Variance (Morning):&#39;</span>, variance_morning, <span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Histogram</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>generate_histogram(morning_df, <span class="st">&#39;Temperature&#39;</span>, <span class="st">&#39;Temperature °C&#39;</span>, <span class="st">&#39;Morning Temperature Histogram (6 AM to 11:59 AM)&#39;</span>)</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Waveform</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>generate_waveform(morning_df, <span class="st">&#39;Morning Temperature Waveform (6 AM to 11:59 AM)&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>          Time  Temperature
+49    06:13:30         28.4
+50    06:27:33         28.7
+51    06:41:36         28.7
+52    06:55:40         28.8
+53    07:09:43         28.9
+...        ...          ...
+1336  10:50:23         28.7
+1337  11:04:27         29.5
+1338  11:18:31         30.4
+1339  11:32:36         29.4
+1340  11:46:40         29.4
+
+[357 rows x 2 columns]
+       Temperature
+count   357.000000
+mean     28.058263
+std       0.765932
+min      25.600000
+25%      27.600000
+50%      28.200000
+75%      28.600000
+max      30.400000
+
+Variance (Morning): 0.5850087485974782 
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/69ed3280aa8208286869827431109623b5d54ee0.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/fd22a4463266f2d022858e5e97644a4d6a931834.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="V_KDtyQ3Yorg" data-outputId="b690ca85-8dfd-475e-9c63-5ef68ba27fc7">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the DataFrame to include only rows within &#39;Afternoon&#39; time (12 PM to 5:59 PM)</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>afternoon_data <span class="op">=</span> df[(df[<span class="st">&#39;Time&#39;</span>].dt.hour <span class="op">&gt;=</span> <span class="dv">12</span>) <span class="op">&amp;</span> (df[<span class="st">&#39;Time&#39;</span>].dt.hour <span class="op">&lt;</span> <span class="dv">18</span>)]</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Select only &#39;Time&#39; and &#39;Temperature&#39; columns and format &#39;Time&#39; as string</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>afternoon_df <span class="op">=</span> afternoon_data[[<span class="st">&#39;Time&#39;</span>, <span class="st">&#39;Temperature&#39;</span>]].copy()</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>afternoon_df[<span class="st">&#39;Time&#39;</span>] <span class="op">=</span> afternoon_df[<span class="st">&#39;Time&#39;</span>].dt.time</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(afternoon_df)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the summary statistics for the numeric columns</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>statsum_afternoon <span class="op">=</span> afternoon_df.drop(columns<span class="op">=</span>[<span class="st">&#39;Time&#39;</span>]).describe()</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(statsum_afternoon)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>variance_afternoon <span class="op">=</span> calculate_variance(afternoon_df)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Variance (Afternoon):&#39;</span>, variance_afternoon, <span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Histogram</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>generate_histogram(afternoon_df, <span class="st">&#39;Temperature&#39;</span>, <span class="st">&#39;Temperature °C&#39;</span>, <span class="st">&#39;Afternoon Temperature Histogram (12 PM to 5:59 PM)&#39;</span>)</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Waveform</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>generate_waveform(afternoon_df, <span class="st">&#39;Afternoon Temperature Waveform (12 PM to 5:59 PM)&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>          Time  Temperature
+74    12:04:58         29.2
+75    12:19:01         29.8
+76    12:33:04         30.7
+77    12:47:07         30.9
+78    13:01:10         30.8
+...        ...          ...
+1342  12:14:48         29.8
+1343  12:28:52         30.8
+1344  12:42:55         30.0
+1345  12:56:59         30.7
+1346  13:11:03         29.9
+
+[329 rows x 2 columns]
+       Temperature
+count   329.000000
+mean     28.955319
+std       0.876546
+min      27.000000
+25%      28.400000
+50%      28.700000
+75%      29.600000
+max      30.900000
+
+Variance (Afternoon): 0.7659975425208561 
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/f77949b4048a508f2b61ac32ad2735a83d4e7f88.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/0b2b9a400e1eb3f706f0f9b1864c2071d3e91b98.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="-svsx_0pY9oH" data-outputId="0b97730e-6310-4730-9763-ccc3b4f90f6c">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the DataFrame to include only rows within &#39;Evening&#39; time (6 PM to 5:59 AM)</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>evening_data <span class="op">=</span> df[(df[<span class="st">&#39;Time&#39;</span>].dt.hour <span class="op">&gt;=</span> <span class="dv">18</span>) <span class="op">&amp;</span> (df[<span class="st">&#39;Time&#39;</span>].dt.hour <span class="op">&lt;</span> <span class="dv">24</span>)]</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Select only &#39;Time&#39; and &#39;Temperature&#39; columns and format &#39;Time&#39; as string</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>evening_df <span class="op">=</span> evening_data[[<span class="st">&#39;Time&#39;</span>, <span class="st">&#39;Temperature&#39;</span>]].copy()</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>evening_df[<span class="st">&#39;Time&#39;</span>] <span class="op">=</span> evening_df[<span class="st">&#39;Time&#39;</span>].dt.time</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(evening_df)</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the summary statistics for the numeric columns</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>statsum_evening <span class="op">=</span> evening_df.drop(columns<span class="op">=</span>[<span class="st">&#39;Time&#39;</span>]).describe()</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(statsum_evening)</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>variance_evening <span class="op">=</span> calculate_variance(evening_df)</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Variance (Evening):&#39;</span>, variance_evening, <span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Histogram</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>generate_histogram(evening_df, <span class="st">&#39;Temperature&#39;</span>, <span class="st">&#39;Temperature °C&#39;</span>, <span class="st">&#39;Evening Temperature Histogram (6 PM to 5:59 AM)&#39;</span>)</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Waveform</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>generate_waveform(evening_df, <span class="st">&#39;Evening Temperature Waveform (6 PM to 5:59 AM)&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>          Time  Temperature
+0     18:28:08         30.5
+1     18:42:11         30.6
+2     18:56:14         29.7
+3     19:10:17         30.1
+4     19:24:23         30.4
+...        ...          ...
+1286  22:52:59         29.6
+1287  23:07:03         29.7
+1288  23:21:07         29.1
+1289  23:35:10         29.3
+1290  23:49:14         29.8
+
+[334 rows x 2 columns]
+       Temperature
+count   334.000000
+mean     28.876347
+std       0.757194
+min      27.300000
+25%      28.200000
+50%      28.700000
+75%      29.500000
+max      30.600000
+
+Variance (Evening): 0.5716261787801643 
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/02709836903fb1eeada384ba8027ceda0f27b815.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/0b8fecdca61f10029ac7a829f5d6daee97f7159a.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="GTD_LlnjC_2K">
+<p><strong>Day of Week</strong></p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="AgLsd31ZH8vm" data-outputId="39a6aab3-b355-44f5-e59c-c4c8389a771a">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the &#39;date&#39; column to a datetime object if it&#39;s not already in datetime format</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Date&#39;</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">&#39;Date&#39;</span>])</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Sort the DataFrame by the &#39;date&#39; column</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>df.sort_values(by<span class="op">=</span><span class="st">&#39;Date&#39;</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the DataFrame to include only rows with Mondays</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>mondays_df <span class="op">=</span> df[df[<span class="st">&#39;Date&#39;</span>].dt.dayofweek <span class="op">==</span> <span class="dv">0</span>].copy()</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>mondays_df[<span class="st">&#39;Time&#39;</span>] <span class="op">=</span> mondays_df[<span class="st">&#39;Time&#39;</span>].dt.time</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(mondays_df.drop(columns<span class="op">=</span>[<span class="st">&#39;DateTime&#39;</span>]))</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the summary statistics for the numeric columns</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>statsum_mon <span class="op">=</span> mondays_df.drop(columns<span class="op">=</span>[<span class="st">&#39;Date&#39;</span>]).describe()</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(statsum_mon)</span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>variance_mon <span class="op">=</span> calculate_variance(mondays_df)</span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Variance (Monday):&#39;</span>, variance_mon, <span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Histogram</span></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>generate_histogram(mondays_df, <span class="st">&#39;Temperature&#39;</span>, <span class="st">&#39;Temperature °C&#39;</span>, <span class="st">&#39;Monday Temperature Histogram&#39;</span>)</span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Waveform</span></span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>generate_waveform(mondays_df, <span class="st">&#39;Monday Temperature Waveform&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>           Date      Time  Temperature
+555  2023-10-23  17:33:47         27.8
+548  2023-10-23  15:55:22         28.2
+554  2023-10-23  17:19:43         27.9
+553  2023-10-23  17:05:40         28.0
+552  2023-10-23  16:51:37         28.2
+...         ...       ...          ...
+1221 2023-10-30  07:24:29         27.4
+1220 2023-10-30  07:10:25         27.0
+1219 2023-10-30  06:56:22         27.0
+1218 2023-10-30  06:42:18         27.0
+1217 2023-10-30  06:28:14         27.3
+
+[200 rows x 3 columns]
+       Temperature
+count   200.000000
+mean     28.445500
+std       1.070237
+min      26.600000
+25%      27.800000
+50%      28.300000
+75%      29.200000
+max      30.800000
+
+Variance (Monday): 1.13967975 
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/aaee4049cd847a5c1fd9f9b83924ac6f0ee7beb5.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/87fd34458b1ae7012b0a4e587bb3a18d7dfad972.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="DAIeDBsDH8vn" data-outputId="987f44bc-546a-4bae-82c5-8f7659950f66">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the DataFrame to include only rows with Tuesdays</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>tuesdays_df <span class="op">=</span> df[df[<span class="st">&#39;Date&#39;</span>].dt.dayofweek <span class="op">==</span> <span class="dv">1</span>].copy()</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>tuesdays_df[<span class="st">&#39;Time&#39;</span>] <span class="op">=</span> tuesdays_df[<span class="st">&#39;Time&#39;</span>].dt.time</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tuesdays_df.drop(columns<span class="op">=</span>[<span class="st">&#39;DateTime&#39;</span>]))</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the summary statistics for the numeric columns</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>statsum_tue <span class="op">=</span> tuesdays_df.drop(columns<span class="op">=</span>[<span class="st">&#39;Date&#39;</span>]).describe()</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(statsum_tue)</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>variance_tue <span class="op">=</span> calculate_variance(tuesdays_df)</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Variance (Tuesday):&#39;</span>, variance_tue, <span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Histogram</span></span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>generate_histogram(tuesdays_df, <span class="st">&#39;Temperature&#39;</span>, <span class="st">&#39;Temperature °C&#39;</span>, <span class="st">&#39;Tuesday Temperature Histogram&#39;</span>)</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Waveform</span></span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>generate_waveform(tuesdays_df, <span class="st">&#39;Tuesday Temperature Waveform&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>           Date      Time  Temperature
+0    2023-10-17  18:28:08         30.5
+22   2023-10-17  23:36:19         29.6
+21   2023-10-17  23:22:17         29.5
+20   2023-10-17  23:06:05         29.5
+19   2023-10-17  22:55:08         29.8
+...         ...       ...          ...
+1313 2023-10-31  05:26:52         27.6
+1314 2023-10-31  05:40:56         27.5
+1315 2023-10-31  05:55:00         27.5
+1317 2023-10-31  06:23:07         27.6
+1346 2023-10-31  13:11:03         29.9
+
+[181 rows x 3 columns]
+       Temperature
+count   181.000000
+mean     28.276243
+std       1.183892
+min      25.600000
+25%      27.600000
+50%      28.000000
+75%      29.200000
+max      30.800000
+
+Variance (Tuesday): 1.3938554989163947 
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/8e7383c94df4b22eb4de60758557c7af009df22f.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/df0399bae0e91291f0820bec149ea10d3bfff260.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="W__-ifIHH8vo" data-outputId="832ee2fa-392f-40ba-dced-350838a0773a">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the DataFrame to include only rows with Wednesdays</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>wednesdays_df <span class="op">=</span> df[df[<span class="st">&#39;Date&#39;</span>].dt.dayofweek <span class="op">==</span> <span class="dv">2</span>].copy()</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>wednesdays_df[<span class="st">&#39;Time&#39;</span>] <span class="op">=</span> wednesdays_df[<span class="st">&#39;Time&#39;</span>].dt.time</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(wednesdays_df.drop(columns<span class="op">=</span>[<span class="st">&#39;DateTime&#39;</span>]))</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the summary statistics for the numeric columns</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>statsum_wed <span class="op">=</span> wednesdays_df.drop(columns<span class="op">=</span>[<span class="st">&#39;Date&#39;</span>]).describe()</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(statsum_wed)</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>variance_wed <span class="op">=</span> calculate_variance(wednesdays_df)</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Variance (Wednesday):&#39;</span>, variance_wed, <span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Histogram</span></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>generate_histogram(wednesdays_df, <span class="st">&#39;Temperature&#39;</span>, <span class="st">&#39;Temperature °C&#39;</span>, <span class="st">&#39;Wednesday Temperature Histogram&#39;</span>)</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Waveform</span></span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>generate_waveform(wednesdays_df, <span class="st">&#39;Wednesday Temperature Waveform&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>          Date      Time  Temperature
+89  2023-10-18  15:35:45         30.3
+90  2023-10-18  15:49:48         30.2
+91  2023-10-18  16:03:51         29.5
+96  2023-10-18  17:14:08         30.2
+93  2023-10-18  16:31:58         29.9
+..         ...       ...          ...
+714 2023-10-25  07:05:37         27.3
+713 2023-10-25  06:51:33         26.9
+712 2023-10-25  06:37:28         27.0
+711 2023-10-25  06:23:24         26.8
+721 2023-10-25  08:44:05         27.8
+
+[200 rows x 3 columns]
+       Temperature
+count   200.000000
+mean     28.772000
+std       0.879193
+min      26.800000
+25%      28.300000
+50%      28.700000
+75%      29.300000
+max      30.900000
+
+Variance (Wednesday): 0.769116 
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/9bde324e80bbdfecec44873458033e35e5a031ab.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/b1d8278c5b4b8ba87d5b18d0212686becb000cca.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="8ZMBAWdEH8vo" data-outputId="6bc1d1ff-097b-4366-d1ca-ebeb09bb5ab5">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the DataFrame to include only rows with Thursdays</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>thursdays_df <span class="op">=</span> df[df[<span class="st">&#39;Date&#39;</span>].dt.dayofweek <span class="op">==</span> <span class="dv">3</span>].copy()</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>thursdays_df[<span class="st">&#39;Time&#39;</span>] <span class="op">=</span> thursdays_df[<span class="st">&#39;Time&#39;</span>].dt.time</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(thursdays_df.drop(columns<span class="op">=</span>[<span class="st">&#39;DateTime&#39;</span>]))</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the summary statistics for the numeric columns</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>statsum_thu <span class="op">=</span> thursdays_df.drop(columns<span class="op">=</span>[<span class="st">&#39;Date&#39;</span>]).describe()</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(statsum_thu)</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>variance_thu <span class="op">=</span> calculate_variance(thursdays_df)</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Variance (Thursday):&#39;</span>, variance_thu, <span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Histogram</span></span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>generate_histogram(thursdays_df, <span class="st">&#39;Temperature&#39;</span>, <span class="st">&#39;Temperature °C&#39;</span>, <span class="st">&#39;Thursday Temperature Histogram&#39;</span>)</span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Waveform</span></span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a>generate_waveform(early_morning_df, <span class="st">&#39;Thursday Temperature Waveform&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>          Date      Time  Temperature
+198 2023-10-19  17:50:51         28.4
+189 2023-10-19  15:44:23         28.5
+197 2023-10-19  17:36:47         28.0
+196 2023-10-19  17:22:44         28.3
+195 2023-10-19  17:08:42         28.4
+..         ...       ...          ...
+818 2023-10-26  07:57:22         27.1
+819 2023-10-26  08:11:28         27.5
+820 2023-10-26  08:25:33         27.6
+821 2023-10-26  08:39:37         27.7
+817 2023-10-26  07:43:18         27.4
+
+[204 rows x 3 columns]
+       Temperature
+count   204.000000
+mean     28.531863
+std       0.666595
+min      26.600000
+25%      28.275000
+50%      28.600000
+75%      29.000000
+max      30.000000
+
+Variance (Thursday): 0.44217103998462115 
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/33d7cb50139a9a8da61aff3e971c8ab903a588f3.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/b43503cb82b168e22e2d6cf9022b72a427a69139.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="szeKRjZrH8vp" data-outputId="9fa0489e-cda7-4dc7-ab48-4bb41a09332d">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the DataFrame to include only rows with Fridays</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>fridays_df <span class="op">=</span> df[df[<span class="st">&#39;Date&#39;</span>].dt.dayofweek <span class="op">==</span> <span class="dv">4</span>].copy()</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>fridays_df[<span class="st">&#39;Time&#39;</span>] <span class="op">=</span> fridays_df[<span class="st">&#39;Time&#39;</span>].dt.time</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(fridays_df.drop(columns<span class="op">=</span>[<span class="st">&#39;DateTime&#39;</span>]))</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the summary statistics for the numeric columns</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>statsum_fri <span class="op">=</span> fridays_df.drop(columns<span class="op">=</span>[<span class="st">&#39;Date&#39;</span>]).describe()</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(statsum_fri)</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>variance_fri <span class="op">=</span> calculate_variance(fridays_df)</span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Variance (Friday):&#39;</span>, variance_fri, <span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Histogram</span></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>generate_histogram(fridays_df, <span class="st">&#39;Temperature&#39;</span>, <span class="st">&#39;Temperature °C&#39;</span>, <span class="st">&#39;Friday Temperature Histogram&#39;</span>)</span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Waveform</span></span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>generate_waveform(early_morning_df, <span class="st">&#39;Friday Temperature Waveform&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>          Date      Time  Temperature
+280 2023-10-20  14:01:39         29.3
+286 2023-10-20  15:26:01         28.9
+284 2023-10-20  14:57:55         28.9
+283 2023-10-20  14:43:52         28.9
+282 2023-10-20  14:29:48         29.2
+..         ...       ...          ...
+913 2023-10-27  06:28:35         27.6
+919 2023-10-27  07:53:01         28.3
+920 2023-10-27  08:07:04         28.4
+921 2023-10-27  08:21:09         28.4
+918 2023-10-27  07:38:57         28.3
+
+[185 rows x 3 columns]
+       Temperature
+count   185.000000
+mean     28.614595
+std       0.456181
+min      27.600000
+25%      28.300000
+50%      28.600000
+75%      28.900000
+max      29.900000
+
+Variance (Friday): 0.20697618699780862 
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/044d9821b2b386bbe782ea69a88008ba5b3c57d2.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/f2a225e05bc0b6979fd9de965708bbe898721dda.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="gx_LAbaGH8vp" data-outputId="27189c97-f4a7-4efd-8030-1d6a844288ec">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the DataFrame to include only rows with Saturdays</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>saturdays_df <span class="op">=</span> df[df[<span class="st">&#39;Date&#39;</span>].dt.dayofweek <span class="op">==</span> <span class="dv">5</span>].copy()</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>saturdays_df[<span class="st">&#39;Time&#39;</span>] <span class="op">=</span> saturdays_df[<span class="st">&#39;Time&#39;</span>].dt.time</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(saturdays_df.drop(columns<span class="op">=</span>[<span class="st">&#39;DateTime&#39;</span>]))</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the summary statistics for the numeric columns</span></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>statsum_sat <span class="op">=</span> saturdays_df.drop(columns<span class="op">=</span>[<span class="st">&#39;Date&#39;</span>]).describe()</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(statsum_sat)</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>variance_sat <span class="op">=</span> calculate_variance(saturdays_df)</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Variance (Saturday):&#39;</span>, variance_sat, <span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Histogram</span></span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>generate_histogram(saturdays_df, <span class="st">&#39;Temperature&#39;</span>, <span class="st">&#39;Temperature °C&#39;</span>, <span class="st">&#39;Saturday Temperature Histogram&#39;</span>)</span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Waveform</span></span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a>generate_waveform(early_morning_df, <span class="st">&#39;Saturday Temperature Waveform&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>           Date      Time  Temperature
+368  2023-10-21  18:51:15         28.6
+367  2023-10-21  18:37:12         28.7
+366  2023-10-21  18:23:09         28.6
+365  2023-10-21  18:09:07         28.6
+364  2023-10-21  17:55:04         28.1
+...         ...       ...          ...
+1018 2023-10-28  07:06:19         27.9
+1017 2023-10-28  06:52:15         27.7
+1016 2023-10-28  06:38:11         28.0
+1015 2023-10-28  06:24:06         28.1
+1025 2023-10-28  08:44:48         27.9
+
+[183 rows x 3 columns]
+       Temperature
+count   183.000000
+mean     28.679235
+std       0.593005
+min      27.200000
+25%      28.200000
+50%      28.600000
+75%      29.100000
+max      30.300000
+
+Variance (Saturday): 0.34973274806652926 
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/09744a3bf79fc7fb0090ab7c14db0ecbf004e140.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/d0675039c5a71f5d4c74035d8e252510eb2676e5.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="FTtFTkYK5mUd" data-outputId="7afb3168-ae3f-48ab-9605-3a6f41526598">
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the DataFrame to include only rows with Sundays</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>sundays_df <span class="op">=</span> df[df[<span class="st">&#39;Date&#39;</span>].dt.dayofweek <span class="op">==</span> <span class="dv">6</span>].copy()</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>sundays_df[<span class="st">&#39;Time&#39;</span>] <span class="op">=</span> sundays_df[<span class="st">&#39;Time&#39;</span>].dt.time</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sundays_df.drop(columns<span class="op">=</span>[<span class="st">&#39;DateTime&#39;</span>]))</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the summary statistics for the numeric columns</span></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>statsum_sun <span class="op">=</span> sundays_df.drop(columns<span class="op">=</span>[<span class="st">&#39;Date&#39;</span>]).describe()</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(statsum_sun)</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>variance_sun <span class="op">=</span> calculate_variance(sundays_df)</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Variance (Sunday):&#39;</span>, variance_sun, <span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Histogram</span></span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>generate_histogram(sundays_df, <span class="st">&#39;Temperature&#39;</span>, <span class="st">&#39;Temperature °C&#39;</span>, <span class="st">&#39;Sunday Temperature Histogram&#39;</span>)</span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Waveform</span></span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a>generate_waveform(early_morning_df, <span class="st">&#39;Sunday Temperature Waveform&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>           Date      Time  Temperature
+452  2023-10-22  14:31:20         28.2
+453  2023-10-22  14:45:24         28.1
+454  2023-10-22  16:35:16         28.1
+455  2023-10-22  16:49:21         28.0
+458  2023-10-22  17:45:51         28.0
+...         ...       ...          ...
+1120 2023-10-29  07:15:39         27.9
+1119 2023-10-29  07:01:34         27.6
+1118 2023-10-29  06:47:31         27.6
+1117 2023-10-29  06:33:26         27.4
+1126 2023-10-29  08:54:14         28.2
+
+[194 rows x 3 columns]
+       Temperature
+count   194.000000
+mean     28.553608
+std       0.978532
+min      26.400000
+25%      27.900000
+50%      28.400000
+75%      29.375000
+max      30.800000
+
+Variance (Sunday): 0.9525900733340419 
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/f6360691c331e870b384d3718f4b4ae7fc122e27.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/f1634666f3de8b5414981b778b6e4742fdd99ae3.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="zFC4Ao64HYUn">
+<p><strong>General</strong></p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="4q8aH84AHasw" data-outputId="1c3389db-5777-4da7-c474-95df602efa64">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the DataFrame to include only rows with Sundays</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>general_df <span class="op">=</span> df.copy()</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>general_df[<span class="st">&#39;Time&#39;</span>] <span class="op">=</span> general_df[<span class="st">&#39;Time&#39;</span>].dt.time</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(general_df.drop(columns<span class="op">=</span>[<span class="st">&#39;DateTime&#39;</span>]))</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the summary statistics for the numeric columns</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>statsum_gen <span class="op">=</span> general_df.drop(columns<span class="op">=</span>[<span class="st">&#39;Date&#39;</span>]).describe()</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(statsum_gen)</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>variance_gen <span class="op">=</span> calculate_variance(general_df)</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Variance (General):&#39;</span>, variance_gen, <span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Histogram</span></span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>generate_histogram(general_df, <span class="st">&#39;Temperature&#39;</span>, <span class="st">&#39;Temperature °C&#39;</span>, <span class="st">&#39;General Temperature Histogram&#39;</span>)</span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Line Graph</span></span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>generate_line_graph(general_df, general_df[<span class="st">&#39;DateTime&#39;</span>].dt.hour, <span class="st">&#39;Time (Hour)&#39;</span>, <span class="st">&#39;Temperature vs. Time (Hours)&#39;</span>)</span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a>generate_line_graph(general_df, general_df[<span class="st">&#39;Date&#39;</span>].dt.day_name(), <span class="st">&#39;Time (Day of Week)&#39;</span>, <span class="st">&#39;Temperature vs. Time (Day of Week)&#39;</span>)</span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a>generate_line_graph(general_df, general_df[<span class="st">&#39;Date&#39;</span>], <span class="st">&#39;Time (Date)&#39;</span>, <span class="st">&#39;Temperature vs. Time (Date)&#39;</span>)</span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
+<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-24"><a href="#cb37-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Waveform</span></span>
+<span id="cb37-25"><a href="#cb37-25" aria-hidden="true" tabindex="-1"></a>generate_waveform(general_df, <span class="st">&#39;General Temperature Waveform&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>           Date      Time  Temperature
+0    2023-10-17  18:28:08         30.5
+22   2023-10-17  23:36:19         29.6
+21   2023-10-17  23:22:17         29.5
+20   2023-10-17  23:06:05         29.5
+19   2023-10-17  22:55:08         29.8
+...         ...       ...          ...
+1313 2023-10-31  05:26:52         27.6
+1314 2023-10-31  05:40:56         27.5
+1315 2023-10-31  05:55:00         27.5
+1317 2023-10-31  06:23:07         27.6
+1346 2023-10-31  13:11:03         29.9
+
+[1347 rows x 3 columns]
+       Temperature
+count  1347.000000
+mean     28.554863
+std       0.879355
+min      25.600000
+25%      28.000000
+50%      28.500000
+75%      29.100000
+max      30.900000
+
+Variance (General): 0.7726916478037751 
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/d9796b6ab1006932ddd466ab5eb8054c354ef17a.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/c06fe0f8de476c3095958bbd97c213dc85bd083f.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/8c3e6404ca24593b001a8ad11eab67e550437955.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/2037fced290589a6a237fa6591c0ec4b5f0ee98f.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_1caf40f7606441d3b9a48b270ad6da1f/beae7e99805ab2493c3900235cdd7b20301f4b88.png" /></p>
+</div>
+</div>
+</body>
+</html>
